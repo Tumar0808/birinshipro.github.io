@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menin birinshi veb betim</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            background-color:cornflowerblue;
+            padding:30px;
+            text-align: center;
+            font-size: 45px;
+            color: white;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 700px;
+            padding: 20px;
+            background: chartreuse;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+
+        }
+        nav ul{
+            list-style-type:none;
+            padding: 0%;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color:hotpink;
+            height: 700px;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            color: white;
+
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color:cornflowerblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+        @media(max-width:600px){
+
+        nav,article{
+            width: 100%;
+            height: auto;
+        }
+    }
+        </style>
+</head>
+<body>
+    
+    <header>
+        <h2>Menin birinshi veb betim</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a active  href="men haqqimda.html">Men haqqimda</a><a href="#"></a></li>
+                <li><a href="menin blogim.html">Menin blogim</a></li>
+                <li><a href="men menen baylanis.html">Men menen baylanis</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Men haqqimda</h1>
+            <p>Men alieva Tumar Muxtar qizi</p>
+        </article>
+    </section>
+    <footer>
+        <p>Alieva Tumar</p>
+    </footer>
+</body>
+</html>
